@@ -1,6 +1,10 @@
 language: python
 
-before_script:
+python:
+  -"3.4"
 
+cache: pip
 
-script:
+#install: pip install requirements.txt
+
+script: python tests.py
